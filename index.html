@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Guns Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; color: #333; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      background: url('https://source.unsplash.com/1600x900/?wedding,photography') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+    header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 20px; }
+    header p { font-size: 1.2rem; margin-bottom: 30px; }
+    header a { padding: 12px 25px; background: #d4af37; color: #fff; border-radius: 5px; font-weight: 500; }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: rgba(0,0,0,0.6);
+      z-index: 100;
+    }
+    nav ul { list-style: none; display: flex; }
+    nav ul li { margin: 15px 20px; }
+    nav ul li a { color: #fff; font-weight: 500; }
+
+    /* Sections */
+    section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+    h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 40px; text-align: center; }
+
+    /* Portfolio */
+    .portfolio { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .portfolio img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; transition: transform 0.3s; }
+    .portfolio img:hover { transform: scale(1.05); }
+
+    /* About */
+    .about p { max-width: 800px; margin: 0 auto; line-height: 1.6; text-align: center; }
+
+    /* Contact */
+    .contact form { display: flex; flex-direction: column; max-width: 500px; margin: 0 auto; }
+    .contact input, .contact textarea { margin-bottom: 15px; padding: 12px; border-radius: 5px; border: 1px solid #ccc; }
+    .contact button { padding: 12px; border: none; background: #d4af37; color: #fff; font-weight: 500; border-radius: 5px; cursor: pointer; }
+
+    /* Footer */
+    footer { text-align: center; padding: 30px 0; background: #333; color: #fff; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header / Hero -->
+  <header id="home">
+    <div>
+      <h1>Wedding Guns Photography</h1>
+      <p>Capturing moments, telling stories</p>
+      <a href="#contact">Book Now</a>
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <img src="https://source.unsplash.com/400x400/?wedding,couple1" alt="Wedding Photo 1">
+      <img src="https://source.unsplash.com/400x400/?wedding,couple2" alt="Wedding Photo 2">
+      <img src="https://source.unsplash.com/400x400/?wedding,couple3" alt="Wedding Photo 3">
+      <img src="https://source.unsplash.com/400x400/?wedding,couple4" alt="Wedding Photo 4">
+      <img src="https://source.unsplash.com/400x400/?wedding,couple5" alt="Wedding Photo 5">
+      <img src="https://source.unsplash.com/400x400/?wedding,couple6" alt="Wedding Photo 6">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Hello! We are Wedding Guns Photography – passionate about capturing the joy, emotions, and memories of your special day. From pre-wedding shoots to grand receptions, we turn moments into timeless stories.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Wedding Guns Photography | 9361665223 / 8680933042
+  </footer>
+
+</body>
+</html>
